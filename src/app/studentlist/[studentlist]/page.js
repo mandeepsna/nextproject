@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react"
 
 const page = ({params}) => {
-  console.log(params);
+ // console.log(params);
   return (
     <div>
       <h2>Student Details</h2>

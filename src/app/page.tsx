@@ -11,16 +11,20 @@ export default function Home() {
  }
   return (
     <main >
-     <h2>Basic Routing </h2>
-     <div>
+     <h2 className='text-center text-secondary mb-5'>Basic Routing </h2>
+     <div className='fs-5'>
      <Link href={'/'}>Home</Link>
      <Link href={'/login'}>Login</Link>
      <Link href={'/about'}>About </Link>
      <Link href={'/contact'}>Contact</Link>
-     <div>
-     <button className='btn btn-primary me-3' onClick={()=>navigate('/login')} >Login</button>
-     <button className='btn btn-secondary me-3' onClick={()=>navigate('/about')}>About</button>
+     <Link href={'/fetchapi'}>Fetch API(Client Component)</Link>
+     <Link href={'/fetchapiserver'}>Fetch API(Server Component)</Link>
+
+     <div className='mt-5 '>
+     <button className='btn btn-primary me-5' onClick={()=>navigate('/login')} >Login</button>
+     <button className='btn btn-secondary me-5' onClick={()=>navigate('/about')}>About</button>
      <button className='btn btn-info' onClick={()=>navigate('/contact')}>Contact</button>
+    
      </div>
      </div>
     </main>
