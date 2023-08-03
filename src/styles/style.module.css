@@ -1,0 +1,35 @@
+.textjustify
+{
+    text-align: justify;
+}
+.textred
+{
+    color: red;
+}
+.textcenter
+{
+    text-align: center;
+}
+
+#green
+{
+     color: rgb(122, 138, 97);
+}
+
+.textyellow
+{
+    color: rgb(102, 50, 205);
+}
+.bgblack
+{
+    background-color: rgb(53, 48, 48);
+    color:white;
+    border-radius: 10px;
+    text-align: center;
+}
+.bgred
+{
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+}

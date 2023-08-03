@@ -8,6 +8,8 @@ const FetchserverApi = async () => {
   return data.products;
 };
 const page = async () => {
+ 
+
   const products = await FetchserverApi();
   return (
     <>
