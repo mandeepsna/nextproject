@@ -1,4 +1,3 @@
-
 import React from "react";
 import Link from "next/link";
 
@@ -8,16 +7,14 @@ const FetchserverApi = async () => {
   return data.products;
 };
 const page = async () => {
- 
-
   const products = await FetchserverApi();
   return (
     <>
-     <Link href={"/"}>
+      <Link href={"/"}>
         {" "}
         <button className="btn btn-info">Home Page</button>
       </Link>
-    <div className="col-md-8 mx-auto">
+      <div className="col-md-8 mx-auto">
         <table className="table table-bordered border-primary ">
           <tr>
             <th>Name of Product</th>
@@ -26,7 +23,7 @@ const page = async () => {
             <th>Category</th>
           </tr>
 
-          { products.map((element) => {
+          {products.map((element) => {
             return (
               <tr key={element.id}>
                 <td>{element.title}</td>
@@ -38,9 +35,8 @@ const page = async () => {
           })}
         </table>
       </div>
-      </>
+    </>
   );
-  
 };
 
 export default page;

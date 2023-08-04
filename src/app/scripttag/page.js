@@ -1,14 +1,11 @@
-import React from "react"
+import React from "react";
 import Script from "next/script";
+
 const page = () => {
-  return (
-    <div>
-    <Script
-        src="../../location.js"
-    />
-      <h2 className="text-center mt-5">Script Tag</h2>
-    </div>
-  )
+  <div>
+    <Script src="../../location.js" />
+    <h2 className="text-center mt-5">Script Tag</h2>
+  </div>;
 };
 
-export default page
+export default page;

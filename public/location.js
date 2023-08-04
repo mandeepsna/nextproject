@@ -1,17 +1,16 @@
-if ('geolocation' in navigator) {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        const latitude = position.coords.latitude;
-        const longitude = position.coords.longitude;
-        console.log('Latitude: ', latitude);
-        console.log('Longitude: ', longitude); 
-      },
-     
-      (error) => {
-        console.error('Error getting location:', error.message);
-      }
-    );
-  } else {
-    console.error('Geolocation is not supported in this browser');
+
+
+   function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
   }
-  getCurrentPosition();
+  
+  function showPosition(position) {
+   console.log( position.coords.latitude); 
+   console.log(position.coods.longitude);
+  }
+
+  getLocation();

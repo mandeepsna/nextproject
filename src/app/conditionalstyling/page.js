@@ -4,7 +4,7 @@ import style from '@/styles/style.module.css'
 import {useState} from "react"
 
 const page = () => {
-       const[color,setColor]=useState('re')
+       const[color,setColor]=useState('red')
   return (
     <div className="col-md-7 mx-auto mt-5">
       <h2 className={color=='red' ? style.bgblack : style.bgred}>Conditional Styling</h2>
